@@ -22,5 +22,10 @@ class CustomTest < ActionDispatch::IntegrationTest
   	assert_response :success 
   end
 
+  test "that a profile page works" do
+    get '/jasonsifer'
+    assert_response :success
+  end
+
   # end
 end
